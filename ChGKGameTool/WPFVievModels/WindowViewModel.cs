@@ -28,7 +28,7 @@ namespace ChGKGameTool
         /// <summary>
         /// The radius of the edges of the window
         /// </summary>
-        private int mWindowRadius = 10;
+        private int mWindowRadius = 0;
 
         /// <summary>
         /// The last known dock position
