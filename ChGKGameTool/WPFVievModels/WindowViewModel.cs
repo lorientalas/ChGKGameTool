@@ -1,5 +1,4 @@
-﻿using ChGKGameTool.ViewModel;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Input;
 
 namespace ChGKGameTool
@@ -129,7 +128,6 @@ namespace ChGKGameTool
         /// </summary>
         public ApplicationPage CurrentPage { get; set; } = ApplicationPage.GamePage;
 
-        public GameViewModel CurrentGame { get; set; } = new GameViewModel();
         #endregion
 
         #region Commands

@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ChGKGameTool
+namespace ChGKGameTool.Controls
 {
     /// <summary>
-    /// Interaction logic for GamePage.xaml
+    /// Interaction logic for GameControl.xaml
     /// </summary>
-    public partial class GamePage : BasePage<GameViewModel>
+    public partial class GameControl : UserControl
     {
-        public GamePage()
+        public GameControl()
         {
             InitializeComponent();
         }

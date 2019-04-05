@@ -38,7 +38,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>owl_md_icon.ico</ApplicationIcon>
+    <ApplicationIcon>Images\Logo\owl_md_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FontAwesome5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9cfaf01297a008f8, processorArchitecture=MSIL">
@@ -73,7 +73,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\GameAnswerControl.xaml.cs">
+      <DependentUpon>GameAnswerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GameControl.xaml.cs">
+      <DependentUpon>GameControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GameEntryControl.xaml.cs">
+      <DependentUpon>GameEntryControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DataModels\ApplicationPage.cs" />
+    <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
@@ -85,6 +95,18 @@
     <Compile Include="ViewModel\GameViewModel.cs" />
     <Compile Include="Window\WindowResizer.cs" />
     <Compile Include="WPFVievModels\WindowViewModel.cs" />
+    <Page Include="Controls\GameAnswerControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\GameControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\GameEntryControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -146,7 +168,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="owl_md_icon.ico" />
+    <Resource Include="Images\Logo\owl_md_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace ChGKGameTool
 {
     /// <summary>
-    /// Interaction logic for GamePage.xaml
+    /// Interaction logic for GameAnswerControl.xaml
     /// </summary>
-    public partial class GamePage : BasePage<GameViewModel>
+    public partial class GameAnswerControl : UserControl
     {
-        public GamePage()
+        public GameAnswerControl()
         {
             InitializeComponent();
         }
