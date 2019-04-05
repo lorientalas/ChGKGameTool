@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using ChGKGameTool.ViewModel;
+using System.Windows;
 using System.Windows.Input;
 
 namespace ChGKGameTool
@@ -111,7 +112,7 @@ namespace ChGKGameTool
         /// <summary>
         /// The height of the title bar / caption of the window
         /// </summary>
-        public int TitleHeight { get; set; } = 42;
+        public int TitleHeight { get; set; } = 30;
         /// <summary>
         /// The height of the title bar / caption of the window
         /// </summary>
@@ -123,6 +124,12 @@ namespace ChGKGameTool
         /// </summary>
         public bool DimmableOverlayVisible { get; set; }
 
+        /// <summary>
+        /// The current page of the application
+        /// </summary>
+        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.GamePage;
+
+        public GameViewModel CurrentGame { get; set; } = new GameViewModel();
         #endregion
 
         #region Commands

@@ -9,8 +9,8 @@
     <SolidColorBrush x:Key="BackgroundAlmostBlackBrush" Color="{StaticResource BackgroundAlmostBlack}" />
     <Color x:Key="BackgroundLightBlack">#FF444444</Color>
     <SolidColorBrush x:Key="BackgroundLightBlackBrush" Color="{StaticResource BackgroundLightBlack}" />
-    <Color x:Key="BackgroundGray">#FF999999</Color>
-    <SolidColorBrush x:Key="BackgroundGrayBrush" Color="{StaticResource BackgroundGray}" />
+    <Color x:Key="ForegroundGray">#FF999999</Color>
+    <SolidColorBrush x:Key="ForegroundGrayBrush" Color="{StaticResource ForegroundGray}" />
 
     <Color x:Key="ForegroundOrange">#FFF07B38</Color>
     <SolidColorBrush x:Key="ForegroundOrangeBrush" Color="{StaticResource ForegroundOrange}" />
