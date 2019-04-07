@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChGKGameTool
+namespace ChGKGameTool.Core
 {
     /// <summary>
     /// A base view model that fires Property Changed events as needed

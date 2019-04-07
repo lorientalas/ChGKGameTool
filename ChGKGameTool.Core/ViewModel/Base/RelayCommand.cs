@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace ChGKGameTool
+namespace ChGKGameTool.Core
 {
     /// <summary>
     /// A basic command that runs an Action

@@ -73,29 +73,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Controls\GameAnswerControl.xaml.cs">
-      <DependentUpon>GameAnswerControl.xaml</DependentUpon>
+    <Compile Include="Controls\GameAnswerItemControl.xaml.cs">
+      <DependentUpon>GameAnswerItemControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\GameControl.xaml.cs">
       <DependentUpon>GameControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\GameEntryControl.xaml.cs">
-      <DependentUpon>GameEntryControl.xaml</DependentUpon>
+    <Compile Include="Controls\GameEntryItemControl.xaml.cs">
+      <DependentUpon>GameEntryItemControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\ApplicationPage.cs" />
     <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ValueConverters\ApplicationPageValueConverter.cs" />
     <Compile Include="ValueConverters\BaseValueConverter.cs" />
+    <Compile Include="ValueConverters\BooleanToGemetryConverter.cs" />
     <Compile Include="ValueConverters\BooleanToBorderThicknessConverter.cs" />
-    <Compile Include="ViewModel\Base\BaseViewModel.cs" />
-    <Compile Include="ViewModel\Base\RelayCommand.cs" />
-    <Compile Include="ViewModel\GameViewModel.cs" />
     <Compile Include="Window\WindowResizer.cs" />
     <Compile Include="WPFVievModels\WindowViewModel.cs" />
-    <Page Include="Controls\GameAnswerControl.xaml">
+    <Page Include="Controls\GameAnswerItemControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -103,7 +100,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\GameEntryControl.xaml">
+    <Page Include="Controls\GameEntryItemControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -169,6 +166,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Logo\owl_md_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChGKGameTool.Core\ChGKGameTool.Core.csproj">
+      <Project>{e2fdf95c-7abe-49f3-985e-0633ad198db0}</Project>
+      <Name>ChGKGameTool.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

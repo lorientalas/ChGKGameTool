@@ -1,4 +1,4 @@
-﻿namespace ChGKGameTool
+﻿namespace ChGKGameTool.Core
 {
     /// <summary>
     /// The current page of the appliction
