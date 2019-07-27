@@ -124,11 +124,6 @@ namespace ChGKGameTool
         /// </summary>
         public bool DimmableOverlayVisible { get; set; }
 
-        /// <summary>
-        /// The current page of the application
-        /// </summary>
-        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.GamePage;
-
         #endregion
 
         #region Commands

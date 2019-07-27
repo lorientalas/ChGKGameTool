@@ -6,6 +6,7 @@
         xmlns:fa5="http://schemas.fontawesome.com/icons/"
         xmlns:local="clr-namespace:ChGKGameTool"
         mc:Ignorable="d"
+        x:Name="AppWindow"
         Title="ChGKGameTool"
         WindowStyle="None"
         AllowsTransparency="True"
@@ -176,7 +177,7 @@
             <Grid Grid.Row="0" Background="{StaticResource BackgroundLightOrangeBrush}" Height="50">
             </Grid>
             <Frame Grid.Row="1" x:Name="MainFrame" 
-                   Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}"/>
+                   Content="{Binding ApplicationViewModel.CurrentPage, ElementName=AppWindow, Converter={local:ApplicationPageValueConverter}}"/>
         </Grid>
     </Border>
 </Window>
